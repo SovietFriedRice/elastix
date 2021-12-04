@@ -22,7 +22,7 @@ include( CTest )
   #set( CMAKE_CXX_VISIBILITY_PRESET hidden )
 
 #---------------------------------------------------------------------
-option( ELASTIX_USE_OPENCL "Use OpenCL enabled GPU" OFF )
+option( ELASTIX_USE_OPENCL "Use OpenCL enabled GPU" ON )
 set(_GPU_depends "")
 if(ELASTIX_USE_OPENCL)
   list(APPEND _GPU_depends ITKGPUCommon)
